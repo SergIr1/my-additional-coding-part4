@@ -23,15 +23,31 @@
     <!-- ==================== our Header ==================== -->
 
     <header class="page-header">
-        <div class="conteiner">
+        <div class="container header-container">
             <nav class="page-nav">
-                <a class="logo" href="index.html">SIMPLY <span class="logo-part">CHOCOLATE</span></a>
+
+                <a class="logo" href="index.html">SIMPLY &nbsp;<span class="logo-part">CHOCOLATE</span><svg
+                        class="logo-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-logo"></use>
+                    </svg></a>
+
                 <ul class="nav-list">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#how-made">How it’s made?</a></li>
                     <li class="nav-item"><a class="nav-link" href="#reviews">Chocolate is loved</a></li>
                 </ul>
             </nav>
+
+            <ul class="header-social-list">
+                <li class="header-social-item"><a href="https://www.instagram.com/" class="header-social-link"><svg
+                            class="header-social-icon" width="24" height="24">
+                            <use href="/images/icons.svg#icon-instagram"></use>
+                        </svg></a></li>
+                <li class="header-social-item"><a href="https://x.com/" class="header-social-link"><svg
+                            class="header-social-icon" width="24" height="24">
+                            <use href="/images/icons.svg#icon-twitter"></use>
+                        </svg></a></li>
+            </ul>
         </div>
     </header>
 
@@ -39,9 +55,9 @@
 
     <main>
         <!-- ==================== Hero Section ==================== -->
-        <div class="conteiner">
-            <section class="hero-section">
 
+        <section class="hero-section">
+            <div class="container hero-container">
                 <h1 class="hero-title">Treat yourself or a loved one to
                     our finest ingredients for a moment
                     of pure delight!</h1>
@@ -50,19 +66,25 @@
                     <button class="hero-button" type="button">Buy now</button>
 
                     <a class="example-link" href="#how-made">How it’s made</a>
-                    <a class="scroll-link" href="#benefits">scroll down</a>
+                    <a class="scroll-link" href="#benefits">scroll down <span class="part-scroll-link"><svg
+                                class="hero-scroll-arrow" width="22" height="22">
+                                <use href="./images/icons.svg#icon-arrow-scroll"></use>
+                            </svg></span></a>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
         <!-- ==================== /Hero Section ==================== -->
 
         <!-- ==================== Benefits section ==================== -->
 
         <section class="benefits-section section-paddings" id="benefits">
-            <div class="conteiner">
+            <div class="container">
                 <h2 class="visually-hidden">Our Benefits</h2>
                 <ul class="benefits-list">
                     <li class="benefits-item">
+                        <div class="benefits-wrraper-icon"><svg class="benefits-icon" width="32" height="32">
+                                <use href="/images/icons.svg#icon-chocolate"></use>
+                            </svg></div>
                         <h3 class="benefits-title">Unsurpassed taste</h3>
                         <p class="benefits-text">Crafted with the finest quality cocoa beans and a dedication to
                             perfection,
@@ -71,6 +93,9 @@
                             Unsurpassed Taste and discover a new level of chocolate bliss.</p>
                     </li>
                     <li class="benefits-item">
+                        <div class="benefits-wrraper-icon"><svg class="benefits-icon" width="32" height="32">
+                                <use href="/images/icons.svg#icon-dollar"></use>
+                            </svg></div>
                         <h3 class="benefits-title">Affordable price</h3>
                         <p class="benefits-text">Indulge in high-quality chocolate without breaking the bank with Simply
                             Chocolate's selection of
@@ -79,6 +104,9 @@
                             taste or quality. Browse our selection and indulge in affordable luxury today.</p>
                     </li>
                     <li class="benefits-item">
+                        <div class="benefits-wrraper-icon"><svg class="benefits-icon" width="32" height="32">
+                                <use href="/images/icons.svg#icon-spoon"></use>
+                            </svg></div>
                         <h3 class="benefits-title">Own production</h3>
                         <p class="benefits-text">We take pride in our own production process, ensuring that every step
                             is
@@ -95,7 +123,7 @@
         <!-- ==================== Reviews section ==================== -->
 
         <section class="reviews-section section-paddings">
-            <div class="conteiner">
+            <div class="container">
                 <h2 class="title-section reviews-title">IT ALL ADDS UP TO ONE EXCEPTIONAL <span
                         class="title-text-part">TASTE</span>
                     SENSATION</h2>
@@ -139,7 +167,7 @@
         <!-- ==================== Exampeles section ==================== -->
 
         <section class="examples-section section-paddings" id="how-made">
-            <div class="conteiner">
+            <div class="container">
                 <h2 class="title-section">HOW IT’S <span class="title-text-part">MADE?</span></h2>
                 <div class="examples-wrraper">
                     <img src="./images/example-cooking.jpg" alt="example cooking" width="600" height="400">
@@ -188,7 +216,7 @@
         <!-- ==================== Team section ==================== -->
 
         <section class="team-section section-paddings" id="reviews">
-            <div class="conteiner">
+            <div class="container">
                 <h2 class="title-section"><span class="title-text-part">Chocolate</span> is Loved</h2>
                 <ul class="team-list">
                     <li class="team-item">
@@ -233,7 +261,7 @@
     <!-- ==================== Footer Section ==================== -->
 
     <footer class="footer-section section-paddings">
-        <div class="conteiner footer-flex">
+        <div class="container footer-flex">
             <div class="footer-wrraper">
                 <h2 class="footer-title"><span class="title-text-part">Chocolate</span> a delicious cure for a bad day
                 </h2>

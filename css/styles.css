@@ -37,7 +37,7 @@ img {
 
 /* ==================== COMMON styles ==================== */
 
-.conteiner {
+.container {
     max-width: 1168px;
     padding: 0 16px;
     margin: 0 auto;
@@ -76,13 +76,23 @@ img {
 
 /* ==================== our Header ==================== */
 
+.header-container {
+    display: flex;
+    align-items: center;
+    column-gap: 90px;
+}
+
 .page-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-grow: 1;
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+
     font-style: italic;
     font-weight: 700;
     font-size: 18px;
@@ -92,6 +102,10 @@ img {
 
 .logo-part {
     font-style: normal;
+}
+
+.logo-icon {
+    margin-left: 4px;
 }
 
 .nav-list {
@@ -108,6 +122,8 @@ img {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: -0.02em;
+
+    transition: color 250ms linear;
 }
 
 .nav-link:hover,
@@ -115,20 +131,53 @@ img {
     color:#fd9222;
 }
 
+.header-social-list {
+    display: flex;
+    column-gap: 18px;
+}
+
+.header-social-link {
+    display: block;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    line-height: 0;
+
+    stroke: #111111;
+    transition: stroke 250ms linear;
+}
+
+.header-social-icon {
+    fill: none;
+}
+
+.header-social-link:hover, 
+.header-social-link:focus {
+    stroke: #fd9222;
+}
+
 /* ==================== /our Header ==================== */
 
 /* ==================== Hero Section ====================*/
 
 .hero-section {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 30px;
+        
+    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
+        url(/images/hero-main-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #1e1823;
+}
+
+.hero-container {
     padding-top: 381px;
     padding-bottom: 40px;
     padding-left: 56px;
     padding-right: 56px;
     margin-bottom: 72px;
-
-    border-radius: 30px;
-
-    background-color: #1e1823;
 }
 
 .hero-title {
@@ -154,6 +203,7 @@ img {
     font-size: 14px;
     background-color: #fd9222;
     color:#ffffff;
+    transition: color 250ms linear, background-color 250ms linear;
 }
 
 .hero-button:hover,
@@ -183,14 +233,22 @@ img {
     font-weight: 600;
     font-size: 14px;
     color: #ffffff;
+    transition: color 250ms linear;
 }
 
 .scroll-link {
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.29;
     letter-spacing: -0.03em;
+
     color: #ffffff;
+    transition: color 250ms linear;
+
 }
 
 .example-link:hover,
@@ -198,6 +256,33 @@ img {
 .scroll-link:hover,
 .scroll-link:focus {
     color: #fd9222;
+}
+
+.hero-scroll-arrow {
+    fill: #fd9222;
+    transition: fill 250ms linear;
+}
+
+.part-scroll-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    background-color: #ffffff;
+    transition: background-color 250ms linear;
+}
+
+.scroll-link:hover .part-scroll-link,
+.scroll-link:focus .part-scroll-link {
+    background-color: #fd9222;
+}
+
+.scroll-link:hover .hero-scroll-arrow,
+.scroll-link:focus .hero-scroll-arrow {
+    fill: #ffffff;
 }
 
 /* ==================== /Hero Section ====================*/
@@ -217,7 +302,37 @@ img {
 }
 
 .benefits-item {
+    position: relative;
     width: calc((100% - 172px)/3);
+}
+
+.benefits-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -18px;
+    top: 50%;
+
+    width: 1px;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-50%);
+}
+
+.benefits-wrraper-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 62px;
+    height: 62px;
+    margin-bottom: 22px;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+}
+
+.benefits-icon {
+    fill: #FD9222;
 }
 
 .benefits-title {
@@ -234,7 +349,6 @@ img {
     letter-spacing: -0.02em;
     color: rgba(255, 255, 255, 0.7);
 }
-
 
 /* ==================== /Benefits section ====================*/
 
