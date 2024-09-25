@@ -494,12 +494,24 @@ img {
     column-gap: 20px;
 }
 
+.how-made-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+}
+
 .examples-wrraper-item {
     padding: 32px;
 }
 
 .examples-list {
     padding-right: 27px;
+}
+
+.examples-item {
+    position: relative;
+}
+
+.examples-item:not(:last-child) {
+    margin-bottom: 24px;
 }
 
 .examples-title-item {
@@ -511,15 +523,24 @@ img {
     line-height: 1.33;
 }
 
-.examples-item:not(:last-child) {
-    margin-bottom: 24px;
-}
-
 .exampels-text {
     max-width: 425px;
+    padding-left: 16px;
     font-size: 14px;
     line-height: 1.29;
     letter-spacing: -0.02em;
+}
+
+.examples-wrapper-mark {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid #eceded;
+    background-color: #4c4c4c;
 }
 
 /* ==================== /Exampeles section ====================*/
@@ -530,24 +551,37 @@ img {
     padding-bottom: 100px;
 }
 
+.team-title-margin {
+    margin-bottom: 90px;
+}
+
 .team-list{
     display: flex;
     gap: 28px;
     margin-bottom: 50px;
-
 }
 
 .team-item {
+    position: relative;
     width: calc((100% - 56px)/3);
     padding: 56px 24px 24px 24px;
     
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 15px;
     background-color: #ffffff;
+    box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
 }
 
 .reviews-list-avatar {
-    margin-bottom: 18px;
+    position: absolute;
+    left: 50%;
+    top: -50%;
+    transform: translate(-50%, 75%);
+
+    /* position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%); */
 }
 
 .team-title {
@@ -579,6 +613,8 @@ img {
 
     font-weight: 600;
     font-size: 18px;
+
+    transition: color 250ms linear, background-color 250ms linear;
 }
 
 .team-button:hover,
@@ -638,6 +674,8 @@ img {
     letter-spacing: -0.02em;
     text-align: center;
     color: #ffffff;
+
+    transition: color 250ms linear;
 }
 
 .address-link:hover,
@@ -658,6 +696,8 @@ img {
     line-height: 1.14;
     letter-spacing: -0.02em;
     color: #ffffff;
+
+    transition: color 250ms linear;
 }
 
 .footer-link:hover,
