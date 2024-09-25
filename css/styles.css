@@ -514,6 +514,30 @@ img {
     margin-bottom: 24px;
 }
 
+.examples-wrapper-mark {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid #eceded;
+    background-color: #4c4c4c;
+}
+
+/* .examples-item::before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #4c4c4c;
+    border: 1px solid #eceded;
+} */
+
 .examples-title-item {
     max-width: 350px;
     margin-bottom: 28px;
@@ -529,18 +553,6 @@ img {
     font-size: 14px;
     line-height: 1.29;
     letter-spacing: -0.02em;
-}
-
-.examples-wrapper-mark {
-    position: absolute;
-    left: 0;
-    top: 5px;
-    content: "";
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    border: 1px solid #eceded;
-    background-color: #4c4c4c;
 }
 
 /* ==================== /Exampeles section ====================*/
